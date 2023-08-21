@@ -10,24 +10,23 @@ To get started with the GTASA RTX-Remix Project, ensure that you have the follow
 
 # Mod Installation
 Follow these steps to install the GTASA RTX-Remix mod:
-
--**Backup**: Before installing any mods, it's highly recommended to create a backup of your GTA San Andreas game files. This will allow you to revert back to the original game state if needed.
--**Download**: Visit the GTASA RTX-Remix GitHub repository ↗and click on the "Code" button. From the dropdown, select "Download ZIP" to download the mod files to your computer.
--**Extract**: Once the ZIP file is downloaded, extract its contents to a temporary location on your computer.
--**Create Folder**: Open your GTA San Andreas game folder and navigate to Your Game Folder\rtx-remix\mods\gameReadyAssets. If the rtx-remix folder or any subsequent folders do not exist, create them manually.
--**Copy Files**: Copy the extracted mod files from the temporary location and paste them into the gameReadyAssets folder you created.
--**Verification**: Launch GTA San Andreas and ensure that the RTX enhancements are working as intended.
+- **Backup**: Before installing any mods, it's highly recommended to create a backup of your GTA San Andreas game files. This will allow you to revert back to the original game state if needed.
+- **Download**: click on the "Code" button. From the dropdown, select "Download ZIP" to download the mod files to your computer.
+- **Extract**: Once the ZIP file is downloaded, extract its contents to a temporary location on your computer.
+- **Create Folder**: Open your GTA San Andreas game folder and navigate to Your Game Folder\rtx-remix\mods\gameReadyAssets. If the rtx-remix folder or any subsequent folders do not exist, create them manually.
+- **Copy Files**: Copy the extracted mod files from the temporary location and paste them into the gameReadyAssets folder you created.
+- **Verification**: Launch GTA San Andreas and ensure that the RTX enhancements are working as intended.
 
 Note: The specific installation directory mentioned above, Your Game Folder\rtx-remix\mods\gameReadyAssets, may vary depending on your game folder structure and the instructions provided by the mod developer. Please refer to the documentation or README file provided with the mod for any additional installation instructions or requirements.
 
 # Mod Recommendation
 For improved graphics quality, we recommend installing the following mods together:
-[SA - Essentials Pack](https://www.mixmods.com.br/2019/06/sa-essentials-pack/)
-[Carl Johnson Remastered (INSANITY CJ)](https://www.mixmods.com.br/2018/06/carl-johnson-remastered-insanity-cj/)
-[CJ Insanity + Upscale COMPLETE (all clothes in HD)](https://www.mixmods.com.br/2021/06/cj-insanity-upscale-complete-todas-as-roupas-em-hd/)
-[ECG – Enhanced Classic Graphics – Vehicle.txd](https://www.mixmods.com.br/2020/01/ecg-enhanced-classic-graphics-vehicle-txd/)
-[SA/SA:DE Proper Vehicles Retex](https://www.mixmods.com.br/2022/04/sa-sade-proper-vehicles-retex/)
-[Real Skybox](https://www.mixmods.com.br/2021/06/sa-real-skybox/)
+- **SA - Essentials Pack : [SA - Essentials Pack](https://www.mixmods.com.br/2019/06/sa-essentials-pack/)**.
+- **Carl Johnson Remastered (INSANITY CJ) : [Carl Johnson Remastered (INSANITY CJ)](https://www.mixmods.com.br/2018/06/carl-johnson-remastered-insanity-cj/)**.
+- **CJ Insanity + Upscale COMPLETE (all clothes in HD : [CJ Insanity + Upscale COMPLETE (all clothes in HD)](https://www.mixmods.com.br/2021/06/cj-insanity-upscale-complete-todas-as-roupas-em-hd/)**.
+- **ECG – Enhanced Classic Graphics – Vehicle.txd : [ECG – Enhanced Classic Graphics – Vehicle.txd](https://www.mixmods.com.br/2020/01/ecg-enhanced-classic-graphics-vehicle-txd/)**.
+- **SA/SA:DE Proper Vehicles Retex : [SA/SA:DE Proper Vehicles Retex](https://www.mixmods.com.br/2022/04/sa-sade-proper-vehicles-retex/)**.
+- **Real Skybox : [Real Skybox](https://www.mixmods.com.br/2021/06/sa-real-skybox/)**.
 
 Please note that installing some of these mods may result in the loss of RTX-Remixed PBR textures. We are currently working on matching the texture hash for some of them, but this process is still in progress.
 

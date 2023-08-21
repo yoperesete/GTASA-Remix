@@ -33,6 +33,7 @@ Please note that installing some of these mods may result in the loss of RTX-Rem
 
 # Contributing
 We welcome contributions from the community! If you have any improvements or suggestions for the GTASA RTX-Remix mod, please follow our guidelines for contributing. Fork this repository, make your modifications, and submit a pull request.
+Inside the "Tools" folder, you will find a Python script that generates a new "rough_only.usda" file and automatically copies the newly captured texture to a designated folder. If you're interested in contributing to this project, please refer to the detailed description provided in the tools folder.
 
 # Community Guidelines
 To maintain a healthy and constructive environment, we kindly ask all community members to adhere to the following guidelines:

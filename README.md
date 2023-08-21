@@ -32,16 +32,16 @@ For improved graphics quality, we recommend installing the following mods togeth
 Please note that installing some of these mods may result in the loss of RTX-Remixed PBR textures. We are currently working on matching the texture hash for some of them, but this process is still in progress.
 
 # Contributing
-We welcome contributions from the community! If you have any improvements or suggestions for the GTASA RTX-Remix mod, please follow our guidelines for contributing. Fork this repository, make your modifications, and submit a pull request.
-Inside the "Tools" folder, you will find a Python script that generates a new "rough_only.usda" file and automatically copies the newly captured texture to a designated folder. If you're interested in contributing to this project, please refer to the detailed description provided in the tools folder.
+- We welcome contributions from the community! If you have any improvements or suggestions for the GTASA RTX-Remix mod, please follow our guidelines for contributing. Fork this repository, make your modifications, and submit a pull request.
+- Inside the "Tools" folder, you will find a Python script that generates a new "rough_only.usda" file and automatically copies the newly captured texture to a designated folder. If you're interested in contributing to this project, please refer to the detailed description provided in the tools folder.
 
 # Community Guidelines
 To maintain a healthy and constructive environment, we kindly ask all community members to adhere to the following guidelines:
 
-Be respectful and considerate towards fellow members.
-Provide clear and concise communication.
-Avoid spamming or posting unrelated content.
-Report any issues or concerns to the community moderators.
+- Be respectful and considerate towards fellow members.
+- Provide clear and concise communication.
+- Avoid spamming or posting unrelated content.
+- Report any issues or concerns to the community moderators.
 
 # License
 The GTASA RTX-Remix Project operates under the MIT License. Please review the license file for more details.

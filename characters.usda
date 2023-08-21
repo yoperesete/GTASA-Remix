@@ -11,7 +11,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./texture/characters/F9BCEB604BE52640_albedo.dds@ (
+                asset inputs:diffuse_texture = @./capture/textures/F9BCEB604BE52640.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -62,7 +62,7 @@ over "RootNode"
                     hidden = false
                     renderType = "color"
                 )
-                asset inputs:diffuse_texture = @./texture/characters/140A10A2108C6E0D_albedo.dds@ (
+                asset inputs:diffuse_texture = @./capture/textures/140A10A2108C6E0D.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
@@ -109,7 +109,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./texture/characters/A9C9EC59668F8FA3_albedo.dds@ (
+                asset inputs:diffuse_texture = @./capture/textures/A9C9EC59668F8FA3.dds@ (
                     customData = {
                         asset default = @@
                     }
@@ -139,7 +139,7 @@ over "RootNode"
         {
             over "Shader"
             {
-                asset inputs:diffuse_texture = @./texture/characters/B4873F7FDB1D1404_albedo.dds@ (
+                asset inputs:diffuse_texture = @./capture/textures/B4873F7FDB1D1404.dds@ (
                     customData = {
                         asset default = @@
                     }

@@ -4,6 +4,7 @@
         int refinementOverrideImplVersion = 0
     }
     subLayers = [
+        @./characters.usda@,
         @./Pedestrian.usda@,
         @./light.usda@,
         @./texture/sky/sky.usda@,

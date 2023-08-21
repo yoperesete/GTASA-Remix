@@ -16,54 +16,50 @@ over "RootNode"
         {
             over "Shader"
             {
-                uniform asset info:mdl:sourceAsset = @./materials/AperturePBR_Opacity.mdl@
-                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Opacity"
-                asset inputs:diffuse_texture = @./texture/cars/8DFEEC5AFD5B4752_albedo.dds@ (
+                uniform asset info:mdl:sourceAsset = @./materials/AperturePBR_Translucent.mdl@
+                uniform token info:mdl:sourceAsset:subIdentifier = "AperturePBR_Translucent"
+                float inputs:ior_constant = 1.48 (
                     customData = {
-                        asset default = @@
+                        float default = 1.3
+                        dictionary range = {
+                            float max = 3
+                            float min = 1
+                        }
                     }
-                    displayGroup = "Diffuse"
-                    displayName = "Albedo Map"
-                    doc = "The texture specifying the albedo value and the optional opacity value to use in the alpha channel"
-                    hidden = false
-                )
-                bool inputs:enable_opacity = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Opacity"
-                    displayName = "Enable Opacity"
-                    doc = "Enables the use of cutout opacity"
-                    hidden = false
-                )
-                bool inputs:enable_thin_film = 1 (
-                    customData = {
-                        bool default = 0
-                    }
-                    displayGroup = "Diffuse"
-                    displayName = "Enable thin film"
-                    doc = "Adds a thin film coating to the material"
+                    displayGroup = "Specular"
+                    displayName = "Index of Refraction"
+                    doc = "Index of Refraction of the material"
                     hidden = false
                 )
                 asset inputs:normalmap_texture = @./texture/cars/8DFEEC5AFD5B4752_normal.dds@ (
                     hidden = false
                 )
-                asset inputs:reflectionroughness_texture = @./texture/cars/8DFEEC5AFD5B4752_rough.dds@ (
+                bool inputs:thin_walled = 1 (
+                    customData = {
+                        bool default = 0
+                    }
+                    displayGroup = "Specular"
+                    displayName = "Thin-walled"
+                    doc = "Whether the material is thin-walled"
+                    hidden = false
+                )
+                asset inputs:transmittance_texture = @./texture/cars/8DFEEC5AFD5B4752_albedo.dds@ (
                     colorSpace = "auto"
                     customData = {
                         asset default = @@
                     }
-                    displayGroup = "Specular"
-                    displayName = "Roughness Map"
+                    displayGroup = "Volume"
+                    displayName = "Transmittance or Diffuse Albedo Texture"
+                    doc = "Texture map for either the transmittance color of the material, or the albedo color of the diffuse layer"
                     hidden = false
                 )
-                bool inputs:thin_film_thickness_from_albedo_alpha = 1 (
+                bool inputs:use_diffuse_layer = 1 (
                     customData = {
                         bool default = 0
                     }
-                    displayGroup = "Diffuse"
-                    displayName = "Thin film thickness from albedo alpha"
-                    doc = "Uses the alpha channel from albedo as source for the thin film thickness. Alpha value is scaled by 1500 and represents thickness in nanometers. Opacity becomes fully opaque in this case."
+                    displayGroup = "Volume"
+                    displayName = "Use diffuse layer"
+                    doc = "When set, simulates a diffuse layer on top of the material"
                     hidden = false
                 )
             }

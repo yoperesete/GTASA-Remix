@@ -13,8 +13,9 @@ Follow these steps to install the GTASA RTX-Remix mod:
 - **Backup**: Before installing any mods, it's highly recommended to create a backup of your GTA San Andreas game files. This will allow you to revert back to the original game state if needed.
 - **Download**: click on the "Code" button. From the dropdown, select "Download ZIP" to download the mod files to your computer.
 - **Extract**: Once the ZIP file is downloaded, extract its contents to a temporary location on your computer.
-- **Create Folder**: Open your GTA San Andreas game folder and navigate to Your Game Folder\rtx-remix\mods\gameReadyAssets. If the rtx-remix folder or any subsequent folders do not exist, create them manually.
+- **Create Folder**: Open your GTA San Andreas game folder and navigate to "Your Game Folder\rtx-remix\mods\gameReadyAssets". If the rtx-remix folder or any subsequent folders do not exist, create them manually.
 - **Copy Files**: Copy the extracted mod files from the temporary location and paste them into the gameReadyAssets folder you created.
+- **Move Folder**: Move the Capture Folder to Your Game Folder\rtx-remix".
 - **Verification**: Launch GTA San Andreas and ensure that the RTX enhancements are working as intended.
 
 Note: The specific installation directory mentioned above, Your Game Folder\rtx-remix\mods\gameReadyAssets, may vary depending on your game folder structure and the instructions provided by the mod developer. Please refer to the documentation or README file provided with the mod for any additional installation instructions or requirements.

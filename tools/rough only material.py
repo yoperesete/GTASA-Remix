@@ -3,13 +3,18 @@
 # Place this script to "your game folder/rtx-remix" folder
 
 import os
+import shutil
+from pathlib import Path
 
 dirname = os.path.dirname(__file__)
 capture_directory = './captures/textures'
+newtex_dirctory = './new_tex'
+modscapture_directory = './mods/gameReadyAssets/capture/textures'
 output_file = './mods/gameReadyAssets/rough_only.usda'
 ignoreFiles = ['T_SkyProbe_NonReplaceable.dds']
 diff_file_path = "./diff_file.data"
 importHashfromFile = "./diff_file.data"
+dev_mode = False
 
 base_data = [
 '#usda 1.0\n',
@@ -86,17 +91,19 @@ def make_usda(materials):
 def make_mat(ddsfiles):
     mat = {}
     for file in ddsfiles:
-        mathash = f'        over "mat_{file}"\n'
-        mat[mathash] = []
-        for data in mat_albedo:
-            mat[mathash].append(data.replace("{$texture}", file))
-        for data in mat_rough:
-            mat[mathash].append(data)
+        if file != "":
+            mathash = f'        over "mat_{file}"\n'
+            mat[mathash] = []
+            for data in mat_albedo:
+                mat[mathash].append(data.replace("{$texture}", file))
+            for data in mat_rough:
+                mat[mathash].append(data)
         
     return mat
 
 def merge_usda(new):
     diff = ""
+    newcapture = []
     origin = {}
     lines = ""
     
@@ -134,6 +141,7 @@ def merge_usda(new):
             hash = mat.replace('        over "mat_', '').replace('"\n', '').rstrip(" ")
             if hash not in diff_file:
                 diff += hash + ", "
+                newcapture.append(hash)
 
     # Compare texture in "rough_only.usda"
     for mat in origin:
@@ -144,6 +152,23 @@ def merge_usda(new):
     
     with open(diff_data, "a") as file:
         file.writelines(diff)
+        
+    # copy new capture texture
+    
+    try:
+        os.makedirs(newtex_dirctory)
+    except FileExistsError:
+        # directory already exists
+        pass
+    for mat in newcapture:
+        capture_file = os.path.join(modscapture_directory, mat + ".dds")
+        if not os.path.exists(capture_file):
+            src = os.path.join(capture_directory, mat + ".dds")
+            dst = os.path.join(newtex_dirctory, mat + ".dds")
+            if dev_mode:
+                shutil.copy(src, capture_file)
+            else:
+                shutil.copy(src, dst)
         
     return new
 
@@ -166,6 +191,8 @@ def joinRelativePath(path, relativepath):
     return path
 
 capture_directory = joinRelativePath(dirname, capture_directory)
+newtex_dirctory = joinRelativePath(dirname, newtex_dirctory)
+modscapture_directory = joinRelativePath(dirname, modscapture_directory)
 output_file = joinRelativePath(dirname, output_file)
 file_names = []
 importedhash = []

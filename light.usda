@@ -562,6 +562,7 @@ over "RootNode"
             references = @../../captures/meshes/mesh_4C2489FAD0A31AB9.usd@
         )
         {
+            custom int preserveOriginalDrawCall = 1
             token visibility = "invisible"
 
             def DiskLight "StreetLightType4_Light" (

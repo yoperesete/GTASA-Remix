@@ -768,8 +768,12 @@ over "RootNode"
                     doc = "Enables the emission of light from the material"
                     hidden = false
                 )
-                asset inputs:normalmap_texture = @@
-                asset inputs:reflectionroughness_texture = @@
+                asset inputs:normalmap_texture = @@ (
+                    hidden = false
+                )
+                asset inputs:reflectionroughness_texture = @@ (
+                    hidden = false
+                )
             }
         }
 

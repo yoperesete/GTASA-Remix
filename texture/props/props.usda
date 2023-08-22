@@ -553,10 +553,5 @@ over "RootNode"
             }
         }
     }
-
-    over "Camera"
-    {
-        custom uniform vector3d omni:kit:centerOfInterest = (0, 0, -2228.0854818481344)
-    }
 }
 
